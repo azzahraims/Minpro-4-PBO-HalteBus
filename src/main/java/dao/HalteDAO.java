@@ -46,7 +46,6 @@ public class HalteDAO {
         }
     }
 
-    // READ - Mengambil semua data halte
     public ArrayList<Halte> ambilSemuaHalte() throws SQLException {
         ArrayList<Halte> daftarHalte = new ArrayList<>();
 
@@ -64,7 +63,6 @@ public class HalteDAO {
         return daftarHalte;
     }
 
-    // READ - Mencari halte berdasarkan ID
     public Halte cariHalte(String idHalte) throws SQLException {
         String sql = "SELECT * FROM halte WHERE id_halte = ?";
 
